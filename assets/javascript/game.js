@@ -72,7 +72,6 @@ $(".crystal").click(function () {
   if (money === max) {
     wins++;
     reset();
-    resetW();
     document.getElementById("wins").innerHTML = wins;
   }
 
@@ -123,9 +122,5 @@ function reset() {
     document.getElementById("fun").innerHTML = "Crystal Dragons";
     document.getElementById("fun2").innerHTML = "Crystal Dragons";
   }
-
-}
-
-function resetW() {
 
 }
