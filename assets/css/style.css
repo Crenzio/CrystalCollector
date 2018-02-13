@@ -138,13 +138,14 @@ li {
 div.head {
     text-align: center;
     text-transform: uppercase;
-    width:500px;
-    margin: 0 auto;
+    width:100%
 }
 
 h1 {
     padding-top: 10px;
     margin: 0px;
     padding-bottom: 10px;
+    min-width: 500px;
+    text-align: center;
 }
 
