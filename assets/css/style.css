@@ -1,12 +1,5 @@
 header {
-    top: 0px;
-    border-bottom: solid; 
-    border-width:0 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-color: #0000ff;
-    background-color: lightcyan; 
-    width:100%
+
 }
 
 body {
@@ -137,6 +130,11 @@ div.head {
     text-align: center;
     text-transform: uppercase;
     min-width: 500px;
+    top: 0px;
+    border-bottom: solid; 
+    border-bottom-width: 5px;
+    border-color: #0000ff;
+    background-color: lightcyan; 
 }
 
 h1 {
