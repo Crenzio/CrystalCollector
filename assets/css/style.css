@@ -1,3 +1,7 @@
+header {
+    top: 0; 
+}
+
 body {
     background: url(../images/background.jpg);
     width: 100%;
@@ -125,19 +129,19 @@ li {
 div.head {
     text-align: center;
     text-transform: uppercase;
-    width: 500px;
     top: 0px;
     border-bottom: solid; 
     border-bottom-width: 5px;
     border-color: #0000ff;
     background-color: lightcyan; 
-    width: 100%;
+    margin: 0 auto;
+    width: 500px;
+    text-transform: uppercase;
 }
 
 h1 {
     padding-top: 10px;
     margin: 0px;
     padding-bottom: 10px;
-    min-width: 500px;
     text-align: center;
 }
