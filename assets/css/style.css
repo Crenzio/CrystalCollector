@@ -1,6 +1,8 @@
-header {
+header.col-lg-12, header.col-md-12, header.col-sm-12, header.col-xs-12 {
     top: 0; 
     width: 100%; 
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
@@ -15,7 +17,6 @@ div.main, div.side {
 
 div.center {
     width: 100%;
-    margin-top: 10px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -130,14 +131,11 @@ li {
 div.head {
     text-align: center;
     text-transform: uppercase;
-    top: 0px;
     border-bottom: solid; 
     border-bottom-width: 5px;
     border-color: #0000ff;
     background-color: lightcyan; 
-    margin: 0 auto;
-    width: 500px;
-    text-transform: uppercase;
+    width: 100%; 
 }
 
 h1 {
