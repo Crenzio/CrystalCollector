@@ -1,45 +1,30 @@
-header, header.nav, header.col-lg-12, header.col-md-12, header.col-sm-12, header.col-xs-12 {
-    top: 0; 
-    width: 100%; 
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 body {
-    background: url(../images/background.jpg);
-    width: 100%;
-    height: 100%;
+    background: url("../images/background.jpg");
+    min-width: 320px;
 }
 
-div.main, div.side {
-    display: inline-block;
+div.main {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 320px;
+    padding: 5px;
 }
 
 div.center {
-    width: 100%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 div.image {
     margin: 0 auto;
-    width: 500px;
-    background-color: antiquewhite;
+    background-color: lightcyan;
     text-transform: uppercase;
-    border: solid; 
-    border-width:0 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-color: sandybrown;
+    border: solid 5px #0000ff; 
     margin-bottom: 15px;
     margin-top: 10px;
 }
 
 div.image2 {
     margin: 0 auto;
-    width: 500px;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -53,52 +38,17 @@ div.wins, div.loses {
 }
 
 div.wins {
-    border: solid; 
-    border-width:0 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-color: green;
+    border: solid green 5px; 
     background-color: lightgreen;
 }
 
 div.loses {
-    border: solid; 
-    border-width:0 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-color: red;
+    border: solid red 5px; 
     background-color: pink; 
 }
 
 div.break {
-    width: 200px;
     display: inline-block;
-}
-
-div.money, div.max {
-    background-color: #ffffff;
-    display: inline-block;
-    font-weight: bolder;
-    min-width: 200px;
-    margin: 10px;
-}
-
-div.money {
-    border: solid; 
-    border-width:0 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-color: green;
-    background-color: lightgreen; 
-}
-
-div.max {
-    border: solid; 
-    border-width:0 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-color: red;
-    background-color: pink; 
 }
 
 div.crystal {
@@ -121,23 +71,14 @@ li {
     padding: 0px;
     margin: 0px;
     border: solid; 
-    border-width:0 5px;
+    border-width: 5px;
     border-top-width: 5px;
     border-bottom-width: 5px;
     border-bottom-color: teal;
     border-left-color: blue;
     border-right-color: maroon;
     border-top-color: darkcyan;
-}
-
-div.head {
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: solid; 
-    border-bottom-width: 5px;
-    border-color: #0000ff;
-    background-color: lightcyan; 
-    width: 100%; 
+    margin-bottom: 5px;
 }
 
 h1 {
@@ -145,4 +86,11 @@ h1 {
     margin: 0px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+h3.floor {
+    border-bottom: solid 5px #0000ff;
+    padding: 10px;
+    padding-top: 15px;
+    margin: 0;
 }
