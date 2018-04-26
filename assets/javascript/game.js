@@ -1,34 +1,41 @@
 var flavor = Math.floor((Math.random() * 6) + 0);
+var character; 
 
 swap();
 
 function swap() {
   if (flavor === 0) {
+    character = "Rock Gnomes";
     document.getElementById("fun").innerHTML = "Rock Gnomes";
     document.getElementById("fun2").innerHTML = "Rock Gnomes";
     document.getElementById("target3").innerHTML = "Steampunk";
   }
   if (flavor === 1) {
+    character = "Earth Djinn";
     document.getElementById("fun").innerHTML = "Earth Djinn";
     document.getElementById("fun2").innerHTML = "Earth Djinn";
     document.getElementById("target3").innerHTML = "Surprisingly-Unearthly";
   }
   if (flavor === 2) {
+    character = "Cyber Penguines";
     document.getElementById("fun").innerHTML = "Cyber Penguines";
     document.getElementById("fun2").innerHTML = "Cyber Penguines";
     document.getElementById("target3").innerHTML = "High-Tech";
   }
   if (flavor === 3) {
+    character = "Hamsters";
     document.getElementById("fun").innerHTML = "Hamsters";
     document.getElementById("fun2").innerHTML = "Hamsters";
     document.getElementById("target3").innerHTML = "Totes Legit";
   }
   if (flavor === 4) {
+    character = "Weirdos at the Comic Book Store";
     document.getElementById("fun").innerHTML = "Weirdos at the Comic Book Store";
     document.getElementById("fun2").innerHTML = "Weirdos at the Comic Book Store";
     document.getElementById("target3").innerHTML = "Mint Condition";
   }
   if (flavor === 5) {
+    character = "Crystal Dragons";
     document.getElementById("fun").innerHTML = "Crystal Dragons";
     document.getElementById("fun2").innerHTML = "Crystal Dragons";
     document.getElementById("target3").innerHTML = "Magical";
@@ -83,16 +90,21 @@ $(".crystal").click(function () {
     wins++;
     reset();
     document.getElementById("wins").innerHTML = wins;
+    $("#scorebaord").addClass("scoreUp");
+    $("#scorebaord").removeClass("scoreDown");
+    document.getElementById("scorebaord").innerHTML = "You Won! <br /> Now face the... <br /> " + "<u>" + character  + "</u>!";
   }
-
   if (money > max) {
     loses++;
     reset();
     document.getElementById("loses").innerHTML = loses;
+    $("#scorebaord").removeClass("scoreUp");
+    $("#scorebaord").addClass("scoreDown");
+    document.getElementById("scorebaord").innerHTML = "You Lost! <br /> Better luck facing the... <br /> " + "<u>" + "<u>" + character + "</u>!";
   }
 });
 
-function reset() {
+function reset() {  
   flavor = Math.floor((Math.random() * 6) + 0);
 
   money = 0;
@@ -107,6 +119,8 @@ function reset() {
   document.getElementById("max").innerHTML = max;
   document.getElementById("target").innerHTML = max;
   document.getElementById("target2").innerHTML = max;
+
+  $("html, body").scrollTop(0);
 
 swap();
 

@@ -1,5 +1,6 @@
 body {
     background: url("../images/background.jpg");
+    background-position: center;
     min-width: 320px;
 }
 
@@ -20,6 +21,23 @@ div.image {
     text-transform: uppercase;
     border: solid 5px #0000ff; 
     margin-bottom: 15px;
+}
+
+div.scoreUp {
+    margin: 0 auto;
+    background-color: lightgreen;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: solid 5px green; 
+    margin-top: 10px;
+}
+
+div.scoreDown {
+    margin: 0 auto;
+    background-color: pink;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: solid 5px red; 
     margin-top: 10px;
 }
 
