@@ -89,6 +89,10 @@ $(".crystal").click(function () {
   if (money === max) {
     wins++;
     reset();
+
+    $("#welcome").removeClass("floor");
+    document.getElementById("welcome").innerHTML = "";
+
     document.getElementById("wins").innerHTML = wins;
     $("#scorebaord").addClass("scoreUp");
     $("#scorebaord").removeClass("scoreDown");
@@ -97,6 +101,10 @@ $(".crystal").click(function () {
   if (money > max) {
     loses++;
     reset();
+
+    $("#welcome").removeClass("floor");
+    document.getElementById("welcome").innerHTML = "";
+
     document.getElementById("loses").innerHTML = loses;
     $("#scorebaord").removeClass("scoreUp");
     $("#scorebaord").addClass("scoreDown");
