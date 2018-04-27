@@ -40,6 +40,7 @@ function swap() {
     document.getElementById("fun2").innerHTML = "Crystal Dragons";
     document.getElementById("target3").innerHTML = "Magical";
   }
+  document.getElementById("welcome").innerHTML = "<strong>" + character + "</strong>";
 }
 
 var money = 0;
@@ -89,26 +90,18 @@ $(".crystal").click(function () {
   if (money === max) {
     wins++;
     reset();
-
-    $("#welcome").removeClass("floor");
-    document.getElementById("welcome").innerHTML = "";
-
     document.getElementById("wins").innerHTML = wins;
     $("#scorebaord").addClass("scoreUp");
     $("#scorebaord").removeClass("scoreDown");
-    document.getElementById("scorebaord").innerHTML = "You Won! <br /> Now face the... <br /> " + "<u>" + character  + "</u>!";
+    document.getElementById("scorebaord").innerHTML = "You Won! <br /> Now face the...";
   }
   if (money > max) {
     loses++;
     reset();
-
-    $("#welcome").removeClass("floor");
-    document.getElementById("welcome").innerHTML = "";
-
     document.getElementById("loses").innerHTML = loses;
     $("#scorebaord").removeClass("scoreUp");
     $("#scorebaord").addClass("scoreDown");
-    document.getElementById("scorebaord").innerHTML = "You Lost! <br /> Better luck facing the... <br /> " + "<u>" + "<u>" + character + "</u>!";
+    document.getElementById("scorebaord").innerHTML = "You Lost! <br /> Better luck facing the... <br /> ";
   }
 });
 
