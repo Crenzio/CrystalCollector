@@ -14,7 +14,7 @@ function swap() {
     character = "Earth Djinn";
     document.getElementById("fun").innerHTML = "Earth Djinn";
     document.getElementById("fun2").innerHTML = "Earth Djinn";
-    document.getElementById("target3").innerHTML = "Surprisingly-Unearthly";
+    document.getElementById("target3").innerHTML = "Surprisingly Unearthly";
   }
   if (flavor === 2) {
     character = "Cyber Penguines";
